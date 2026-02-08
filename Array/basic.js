@@ -1,6 +1,6 @@
 // find the maximum and minimum from the give array day1 
 //traversing
-let arr =[1,2,30,400,5000];
+// let arr =[1,2,30,400,5000];
 // this is call traversing we access the each element of the array once
 function traversing(arr){
     for(let i=0;i<arr.length;i++){
@@ -48,7 +48,7 @@ function isarraysorted(arr){
         }
     }
 }
-const result = isarraysorted(arr)
+// const result = isarraysorted(arr)
 // if(result){
 //     console.log("array is sorted")
 // }
@@ -56,3 +56,19 @@ const result = isarraysorted(arr)
 //     console.log("array is not sorted")
 // }
 // revrsetraversing(arr);
+
+// now insertion the element with the specific position
+let arrs =[1,2,30,400,5000]
+function insertionatposition(arrs,pos,elem){
+    let i=0;
+    for(i=arrs.length-1;i>=pos-1;i--){
+        arrs[i+1]=arrs[i];
+    }
+
+    arrs[pos-1]=elem;
+    
+
+}
+
+// insertionatposition(arrs,2,10)
+// console.log(arrs);
