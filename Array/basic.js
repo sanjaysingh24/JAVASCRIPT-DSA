@@ -1,0 +1,1 @@
+// find the maximum and minimum from the give array day1 
