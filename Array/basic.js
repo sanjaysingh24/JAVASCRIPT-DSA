@@ -57,9 +57,18 @@ function isarraysorted(arr){
 // }
 // revrsetraversing(arr);
 
-// now insertion the element with the specific position
+// now insertion the element with the specific position for all positon 
 let arrs =[1,2,30,400,5000]
 function insertionatposition(arrs,pos,elem){
+    if(pos<1){
+        console.log("Position can not be less then 1")
+        return;
+    }
+    if(pos>arrs.length+1){
+        console.log("Position should be withing the range");
+        return;
+
+    }
     let i=0;
     for(i=arrs.length-1;i>=pos-1;i--){
         arrs[i+1]=arrs[i];
@@ -70,5 +79,10 @@ function insertionatposition(arrs,pos,elem){
 
 }
 
-// insertionatposition(arrs,2,10)
-// console.log(arrs);
+insertionatposition(arrs,0,10)
+console.log(arrs);
+
+//insertion at the first 
+// let arr = [1,2,3,4,5,6];
+// function insertatstart(elem)
+// //insertion at the end
