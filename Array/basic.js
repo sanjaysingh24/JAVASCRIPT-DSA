@@ -80,9 +80,21 @@ function insertionatposition(arrs,pos,elem){
 }
 
 insertionatposition(arrs,0,10)
-console.log(arrs);
+// console.log(arrs);
 
 //insertion at the first 
-// let arr = [1,2,3,4,5,6];
+let arr = [1,2,3,4,5,6];
 // function insertatstart(elem)
 // //insertion at the end
+function deleteatspecificposition(arr,pos){
+   if(pos<1){
+    console.log("Position can not be less then 1")
+   }
+   for(let i =pos-1;i<arr.length;i++){
+    arr[i]=arr[i+1]
+         
+   }
+   arr.length=arr.length-1;
+}
+// deleteatspecificposition(arr,4)
+// console.log(arr);
