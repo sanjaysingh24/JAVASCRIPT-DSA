@@ -98,3 +98,29 @@ function deleteatspecificposition(arr,pos){
 }
 // deleteatspecificposition(arr,4)
 // console.log(arr);
+
+//reverse an array
+
+function reversearray(arr){
+    let res=[]
+    for(let i  =arr.length-1;i>=0;i--){
+        res.push(arr[i])
+    }
+    console.log(res)
+}
+// reversearray(arr)
+
+
+//second approach
+function reversearray2(arr){
+   let left=0;
+   let right=arr.length-1;
+   while(left<right){
+    [arr[left],arr[right]] =[arr[right],arr[left]];
+    left++;
+    right--;
+
+   }
+}
+reversearray2(arr);
+console.log(arr);
