@@ -26,6 +26,15 @@ function windowsliding(arr,k){
           windowsum+=arr[i]
     }
     maxsum=windowsum;
-    console.log(maxsum,windowsum,'both summ')
+   // now for the second window
+   for(i=k;i<arr.length;i++){
+      windowsum+=arr[i];
+      windowsum-=arr[i-k];
+
+      if(windowsum>maxsum){
+        maxsum=windowsum
+      }
+   }
+   console.log(maxsum);
 }
-windowsliding(arr,3)
+windowsliding(arr,2)
