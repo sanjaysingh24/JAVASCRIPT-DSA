@@ -18,23 +18,24 @@ function findsubarray(arr,k){
 //now window sliding pattern
 
 function windowsliding(arr,k){
-    //in this pattern we need two things one is the previous window sum and one is the maximum sum
+    
+    // first kth element ka sum nikal denge
     let windowsum=0;
-    let maxsum=0;
-    //the first window sum
+    let max =0;
     for(let i=0;i<k;i++){
-          windowsum+=arr[i]
+        windowsum+=arr[i];
+       
     }
-    maxsum=windowsum;
-   // now for the second window
-   for(i=k;i<arr.length;i++){
-      windowsum+=arr[i];
-      windowsum-=arr[i-k];
-
-      if(windowsum>maxsum){
-        maxsum=windowsum
-      }
-   }
-   console.log(maxsum);
+ max=windowsum;
+    // now rest array element
+    for(let i=k;i<arr.length;i++){
+        windowsum+=arr[i];
+        windowsum-=arr[i-k];
+       
+        if(windowsum>max){
+            max=windowsum;
+        }
+    }
+    console.log(max);
 }
 windowsliding(arr,2)
