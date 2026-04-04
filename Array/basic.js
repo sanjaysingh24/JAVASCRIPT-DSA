@@ -1,7 +1,4 @@
-// find the maximum and minimum from the give array day1 
-//traversing
-// let arr =[1,2,30,400,5000];
-// this is call traversing we access the each element of the array once
+
 function traversing(arr){
     for(let i=0;i<arr.length;i++){
     console.log(arr[i])
