@@ -1,9 +1,9 @@
 
-function traversing(arr){
-    for(let i=0;i<arr.length;i++){
-    console.log(arr[i])
-}
-}
+// function traversing(arr){
+//     for(let i=0;i<arr.length;i++){
+//     console.log(arr[i])
+// }
+// }
 function revrsetraversing(arr){
     for(let i=arr.length;i>=0;i--){
         console.log(arr[i])
